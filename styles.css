@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    background-color: whitesmoke;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.meal-card {
+    border: 4px solid #FFFFFF;
+    padding: 30px;
+    background-color: #FFFFFF;
+    /* margin-bottom: 15px; */
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.meal-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.meal-card ul li {
+    list-style: none;
+}
+
+.meal-ingredient {
+    list-style: none;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+img {
+    width: 150px;
+    border-radius: 10px;
+}
+.meal-description {
+    margin-top: 5px;
+}
+.meal-video-link {
+    border: 2px solid #ff4757;
+    background-color: #ff4757;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -65px;
+
+    
+}
+
+
+@media (min-width: 768px) {
+    .meal-list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        
+    }
+    
+
+}
+
+
+
+
+@media (min-width: 1024px) {
+    .meal-list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+        
+    }
+
+}
